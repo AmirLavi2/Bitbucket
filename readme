@@ -9,3 +9,9 @@ press on one of the URL buttons.
 how to delete rss URL:
 double click on the URL buttons.
 
+
+*RSS examples:
+
+https://api.rss2json.com/v1/api.json?rss_url=http://www.rss-specifications.com/blog-feed.xml
+https://api.rss2json.com/v1/api.json?rss_url=http://www.feedforall.com/sample-feed.xml
+https://api.rss2json.com/v1/api.json?rss_url=http://www.feedforall.com/sample.xml
