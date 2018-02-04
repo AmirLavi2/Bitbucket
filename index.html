@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp" ng-controller="MainCtrl">
+<head>
+    <meta charset="UTF-8">
+    <title>myRss</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="http://code.angularjs.org/1.2.13/angular.js"></script>
+    <script src="app.js"></script>
+    <script src="controllers/main-controller.js"></script>
+    <script src="directives/url-directive.js"></script>
+    <script src="directives/items-directive.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+
+        <header> 
+            <div class="col-xs-3">
+                <h4>Add an RSS</h4>
+                <div id="rssInput">
+                    <div class="form-group col-xs-10">
+                        <input type="text" ng-model="rss" class="form-control" placeholder="input URL">
+                    </div>
+                    <div class="col-xs-2">
+                        <button type="button" class="btn btn-info" ng-click="addRss()">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                    </div>  
+                </div>
+                
+                <url></url>
+            </div>
+        </header>
+        <content>
+            <div class="col-xs-9">
+                <h4>View RSS</h4>
+                <items></items>
+            </div>  
+        </content>
+        
+    </div>
+</div>
+</body>
+</html>

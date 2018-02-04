@@ -1,0 +1,15 @@
+*{
+    /*background-color: darkviolet;*/
+    font-family: 'Cursive';
+}
+
+
+small {
+    display: block;
+    line-height: 1.428571429;
+    color: #999;
+}
+
+#rssInput{
+	border-right: 5px solid black;
+}
